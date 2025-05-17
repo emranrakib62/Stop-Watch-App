@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Start animation for the last TextView
+
         val animation = AnimationUtils.loadAnimation(this, R.anim.up_from_bottom_slow)
         binding.tex.startAnimation(animation)
 
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
             binding.startbtn.text = "Pause"
             updateButtonStates()
         } else {
-            stopTimer() // Pause functionality
+            stopTimer()
         }
     }
 
