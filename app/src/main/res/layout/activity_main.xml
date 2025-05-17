@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/jjj"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/te"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StopWatch"
+        android:textColor="@color/white" />
+
+    <!-- Timer Display -->
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/timertext"
+        android:layout_width="250dp"
+        android:layout_height="315dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="85dp"
+        android:text="00:00:00"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:background="@drawable/circle_two_colored"
+        android:padding="20dp"
+        android:gravity="center" />
+
+    <!-- Button Layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <!-- Start Button -->
+        <Button
+            android:id="@+id/startbtn"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:text="Start"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <!-- Stop Button -->
+        <Button
+            android:id="@+id/stopbtn"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:text="Stop"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:enabled="false" />
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startbtn"
+            android:layout_marginTop="20dp"
+            android:text="Reset"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:enabled="false" />
+
+        <TextView
+            android:id="@+id/tex"
+            android:layout_marginTop="170dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed By Emranul Hoque"
+            android:textColor="@color/white" />
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>
